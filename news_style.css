@@ -1,0 +1,85 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+ .position-relative{
+    background-image: url(fon.jpeg);
+    background-position: center;
+}
+.text{
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 8px 8px #ac0000 ;
+}
+.text1{
+    letter-spacing: 5px;
+    font-size: 400%;
+    font-weight: bolder;
+}
+.text2{
+    font-size: 200%;
+}
+.btn{
+    font-size: 150%;
+    width: 50%;
+}
+.first{
+    cursor: pointer;
+    background-image: url(groot.jpg);
+    background-position: center;
+}
+.second{
+    cursor: pointer;
+    background-image: url(marvel.jpg);
+    background-position: center;
+}
+.third{
+    cursor: pointer;
+    background-image: url(fant4.jpg);
+    background-position: center;
+}
+.four{
+    cursor: pointer;
+    background-image: url(ds_card.jpg);
+    background-position: center;
+}
+.up{
+    
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    z-index: 1;
+    right: 16px;
+    top: 85%;
+    border-radius: 100%;
+}
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+

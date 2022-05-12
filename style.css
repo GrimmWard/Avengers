@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(images/fon.jpg);
+
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+h1 {
+    transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+    grid-area: text;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 20vmin;
+    margin: 0;
+    padding: 30px;
+    color: #1d9099;
+    text-shadow: 1vmin 1vmin 0 #00aefc, -1vmin -1vmin 0 #ff0b00;
+    color: white;
+    text-align: center;
+    font-size: 900%;
+    font-weight: 900;
+    transition: 1s;
+}
+    
+
+
+
+h1:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0; 
+    height: 5px;
+    background-color: #ff0b00;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+h1:hover:after,
+h1:focus:after {
+    width: 100%;
+}
+
+.iron {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+
+}
+
+.cap {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+.thor {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+.spider {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+.widow {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+.hulk {
+    margin-top: 35%;
+    font-size: 300%;
+    color: white;
+    text-align: center;
+}
+
+#iron {
+    margin-left: 10%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    border-radius: 50%;
+    background-image: url(images/iron.jpg);
+    overflow: hidden;
+    transition: 1s;
+    cursor:pointer;
+}
+
+#iron:hover {
+    filter: brightness(500%);
+}
+
+#iron:hover .iron {
+    display: none;
+}
+
+
+#cap {
+    margin-left: 40%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(images/cap.jpg);
+    transition: 1s;
+    cursor:pointer;
+}
+#cap:hover {
+    filter: brightness(500%);
+}
+
+#cap:hover .cap {
+    display: none;
+}
+
+#thor {
+    margin-left: 70%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(images/thor.jpg);
+    transition: 1s;
+    cursor:pointer;
+}
+#thor:hover {
+    filter: brightness(500%);
+}
+
+#thor:hover .thor {
+    display: none;
+}
+
+#spider {
+    margin-top: 18%;
+    margin-left: 10%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(images/spider.jpg);
+    transition: 1s;
+    cursor:pointer;
+}
+#spider:hover {
+    filter: brightness(500%);
+}
+
+#spider:hover .spider {
+    display: none;
+}
+
+#widow {
+    margin-top: 18%;
+    margin-left: 40%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(images/widow.jpg);
+    transition: 1s;
+    cursor:pointer;
+}
+#widow:hover {
+    filter: brightness(500%);
+}
+
+#widow:hover .widow {
+    display: none;
+}
+
+#hulk {
+    margin-top: 18%;
+    margin-left: 70%;
+    position: absolute;
+    width: 19%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(images/hulk.jpg);
+    transition: 1s;
+    cursor:pointer;
+}
+#hulk:hover {
+    filter: brightness(500%);
+}
+
+#hulk:hover .hulk {
+    display: none;
+}
+.log{
+    margin-left: 87%;
+    margin-top: 20px;
+    float: right;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    background-color: #00000f;
+    color: white;
+    border: 1px solid #74ebe6;
+    cursor: pointer;
+}
+.news{
+    margin-left: 3%;
+    margin-top: 20px;
+    float: right;
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    background-color: #00000f;
+    color: white;
+    border: 1px solid #74ebe6;
+    cursor: pointer;
+}

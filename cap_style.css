@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url(images/cap_fone.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+h1 {
+    transform: skew(#{$rotationAmt}deg) rotate(#{$rotationAmt}deg);
+    grid-area: text;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 20vmin;
+    margin: 0;
+    color: #ffb100;
+    text-shadow: 1vmin 1vmin 0 #000e77, -1vmin -1vmin 0 #900600;
+    color: #00e1ff;
+    text-align: center;
+    font-size: 900%;
+    font-weight: 900;
+    transition: 1s;
+
+}
+
+h1:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #000088;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+h1:hover:after,
+h1:focus:after {
+    width: 100%;
+}
+
+.cap {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 78.9%;
+}
+
+.cap_face {
+    margin-top: 2%;
+    float: right;
+    width: 25%;
+    height: 86%;
+    overflow: hidden;
+    border: 5px solid #000e77;
+}
+
+.cap_face img {
+    overflow: hidden;
+    float: right;
+    transition: all 1s ease-out;
+    background-color: red;
+}
+
+.cap_face img:hover {
+    transform: scale(1.2);
+}
+
+.text {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 35%;
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    transition: 1s;
+}
+
+a {
+    margin-left: 2%;
+    margin-top: 2%;
+    color: white;
+    text-decoration: none;
+    font-size: 300%;
+    position: absolute;
+    opacity: 0.2;
+}
+
+a:hover {
+
+    opacity: 1;
+    color: blue;
+}
